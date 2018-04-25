@@ -155,7 +155,7 @@ function gameOverDisplay() {
 	}
 	jQuery("#gameoverscreen").fadeIn();
 	jQuery("#buttonCont").fadeIn();
-	jQuery("#container").fadeIn();
+	jQuery("#gamecontainer").fadeIn();
 	jQuery("#socialShare").fadeIn();
 	jQuery("#restart").fadeIn();
     set_score_pos();

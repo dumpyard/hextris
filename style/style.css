@@ -18,7 +18,7 @@
 	font-family:Exo;
 
 }
-#container {
+#gamecontainer {
 	color:#232323;
 	position:absolute;
 	left:50%;
@@ -308,7 +308,7 @@ button:focus {
 	#buttonCont {
 		bottom:calc(50vh - 19vh - 36px);
 	}
-	#container {
+	#gamecontainer {
 		top:calc(50vh - 11vh);
 	}
 }
@@ -317,7 +317,7 @@ button:focus {
 	#buttonCont {
 		bottom:calc(50vh - 19vw - 36px);
 	}
-	#container {
+	#gamecontainer {
 		top:calc(50vh - 11vw);
 	}
 }

@@ -43,14 +43,14 @@ function setBottomContainer() {
 }
 
 function set_score_pos() {
-    jQuery("#container").css('margin-top', '0');
-    var middle_of_container = (jQuery("#container").height()/2 + jQuery("#container").offset().top);
+    jQuery("#gamecontainer").css('margin-top', '0');
+    var middle_of_container = (jQuery("#gamecontainer").height()/2 + jQuery("#gamecontainer").offset().top);
     var top_of_bottom_container = jQuery("#buttonCont").offset().top
     var igt = jQuery("#highScoreInGameText")
     var igt_bottom = igt.offset().top + igt[0].offsetHeight
     var target_midpoint = (top_of_bottom_container + igt_bottom)/2
     var diff = (target_midpoint-middle_of_container)
-    jQuery("#container").css("margin-top",diff + "px");
+    jQuery("#gamecontainer").css("margin-top",diff + "px");
 }
 
 function toggleDevTools() {
