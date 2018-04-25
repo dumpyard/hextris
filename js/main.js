@@ -90,7 +90,7 @@ function hideUIElements() {
 function init(b) {
 	if(settings.ending_block && b == 1){return;}
 	if (b) {
-		jQuery("#pauseBtn").attr('src',"./images/btn_pause.svg");
+		jQuery("#pauseBtn").attr('src',"http://hextris.github.io/hextris/images/btn_pause.svg");
 		if (jQuery('#helpScreen').is(":visible")) {
 			jQuery('#helpScreen').fadeOut(150, "linear");
 		}
@@ -111,7 +111,7 @@ function init(b) {
 		jQuery("#currentHighScore").text(highscores[0])
 	}
 	infobuttonfading = true;
-	jQuery("#pauseBtn").attr('src',"./images/btn_pause.svg");
+	jQuery("#pauseBtn").attr('src',"http://hextris.github.io/hextris/images/btn_pause.svg");
 	hideUIElements();
 	var saveState = localStorage.getItem("saveState") || "{}";
 	saveState = JSONfn.parse(saveState);
@@ -350,13 +350,13 @@ function checkGameOver() {
 }
 
 function showHelp() {
-	if (jQuery('#openSideBar').attr('src') == './images/btn_back.svg') {
-		jQuery('#openSideBar').attr('src', './images/btn_help.svg');
+	if (jQuery('#openSideBar').attr('src') == 'http://hextris.github.io/hextris/images/btn_back.svg') {
+		jQuery('#openSideBar').attr('src', 'http://hextris.github.io/hextris/images/btn_help.svg');
 		if (gameState != 0 && gameState != -1 && gameState != 2) {
 			jQuery('#fork-ribbon').fadeOut(150, 'linear');
 		}
 	} else {
-		jQuery('#openSideBar').attr('src', './images/btn_back.svg');
+		jQuery('#openSideBar').attr('src', 'http://hextris.github.io/hextris/images/btn_back.svg');
 		if (gameState == 0 && gameState == -1 && gameState == 2) {
 			jQuery('#fork-ribbon').fadeIn(150, 'linear');
 		}
@@ -367,7 +367,7 @@ function showHelp() {
 		pause();
 	}
 
-	if(jQuery("#pauseBtn").attr('src') == "./images/btn_pause.svg" && gameState != 0 && !infobuttonfading) {
+	if(jQuery("#pauseBtn").attr('src') == "http://hextris.github.io/hextris/images/btn_pause.svg" && gameState != 0 && !infobuttonfading) {
 		return;
 	}
 

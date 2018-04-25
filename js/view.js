@@ -129,9 +129,9 @@ function setMainMenu() {
 	}, 500);
 	jQuery('#restartBtn').hide();
 	if (jQuery("#pauseBtn").replace(/^.*[\\\/]/, '') == "btn_pause.svg") {
-		jQuery("#pauseBtn").attr("src","./images/btn_resume.svg");
+		jQuery("#pauseBtn").attr("src","http://hextris.github.io/hextris/images/btn_resume.svg");
 	} else {
-		jQuery("#pauseBtn").attr("src","./images/btn_pause.svg");
+		jQuery("#pauseBtn").attr("src","http://hextris.github.io/hextris/images/btn_pause.svg");
 	}
 }
 
@@ -192,7 +192,7 @@ function pause(o) {
 			jQuery('#helpScreen').fadeOut(300, "linear");
 		}
 
-		jQuery("#pauseBtn").attr("src", "./images/btn_pause.svg");
+		jQuery("#pauseBtn").attr("src", "http://hextris.github.io/hextris/images/btn_pause.svg");
 		jQuery('.helpText').fadeOut(300, 'linear');
 		jQuery('#overlay').fadeOut(300, 'linear');
 		hideText();
@@ -208,7 +208,7 @@ function pause(o) {
 			showText(message);
 		}
 		jQuery('#fork-ribbon').fadeIn(300, 'linear');
-		jQuery("#pauseBtn").attr("src","./images/btn_resume.svg");
+		jQuery("#pauseBtn").attr("src","http://hextris.github.io/hextris/images/btn_resume.svg");
 		jQuery('#overlay').fadeIn(300, 'linear');
 		prevGameState = gameState;
 		setTimeout(function() {
